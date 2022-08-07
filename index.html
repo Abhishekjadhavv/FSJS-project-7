@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------ custom css here ---- -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- -----Google font ----  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins&display=swap" rel="stylesheet" />
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Product Home Page</title>
+</head>
+
+<body>
+    <header>
+        <!-- ------- navbar here  ----- -->
+        <nav class="navbar flex space-between">
+            <div class="logo"><img src="img/logo.svg" alt=""></div>
+            <ul class="menu-item flex">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">About</a></li>
+                <i class='bx bx-x close'></i>
+            </ul>
+            <div class="icons flex gap-10">
+                <i class='bx bx-shopping-bag'></i>
+                <i class='bx bx-search'></i>
+                <i class='bx bx-heart'></i>
+                <i class='bx bx-user'></i>
+                <i class='bx bx-menu bar'></i>
+            </div>
+        </nav>
+        <!-- ------- navbar end here  ----- -->
+    </header>
+
+    <main>
+        <section class="home-section flex">
+            <div class="home-content">
+                <h3 class="flex"><span>New Product</span><img src="img/circles.svg" alt="circles" /></h3>
+                <h1>Wireless Headphone</h1>
+                <ul class="list">
+                    <li class="flex">
+                        <div class="flex flex-center"><img src="img/plus.svg" alt=""></div><span>Clear Sound</span>
+                    </li>
+                    <li class="flex">
+                        <div class="flex flex-center"><img src="img/plus.svg" alt=""></div><span>FM Function</span>
+                    </li>
+                    <li class="flex">
+                        <div class="flex flex-center"><img src="img/plus.svg" alt=""></div> <span>Up To 11 Hours
+                            Playtime</span>
+                    </li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor atque eaque suscipit! Eveniet vitae
+                    itaque aliquam tenetur asperiores. Maxime labore eius architecto reprehenderit nobis maiores velit
+                    sapiente suscipit porro veritatis?</p>
+                <div class="buttons flex btn-con flex-wrap">
+                    <button class="btn">Go Shopping</button>
+                    <button class="btn">See Catalog</button>
+                </div>  
+            </div>
+
+            <div class="home-img">
+                <div class="img flex flex-center">
+                    <img src="img/headphones.jpg" alt="">
+                    <div class="discount-content flex flex-center">
+                        <h4>Discount</h4>
+                        <h1>50%</h1>
+                    </div>
+                    <img src="img/discount.svg" id="circle" alt="">
+                </div>
+
+                <div class="dots flex flex-center">
+                    <div class="dot yellow-dot"></div>
+                    <div class="dot tomato-dot"></div>
+                    <div class="dot black-dot"></div>
+                </div>
+               <div class="btn-con flex flex-center"><button class="btn">Add to chart</button></div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ----- js here ----- -->
+
+    <script>
+        const menu = document.querySelector(".menu-item"),
+            bar = document.querySelector(".bar"),
+            close_btn = document.querySelector(".close");
+
+        bar.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+
+        close_btn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: #fff;
+}
+
+/* ------ utility  classes here ----- */
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.btn-con{
+    margin-top: 20px;
+ }
+ .btn{
+     padding: 0.7rem 2rem;
+     background-color: rgb(253, 100, 73);
+     border: none;
+     color: #fff;
+     border-radius: 30px;
+     cursor: pointer;
+ }
+
+/* ------ utility  classes end here ----- */
+
+
+/* ------- header section start from here ---- */
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    background-color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    padding: 1rem 3rem;
+    z-index: 11;
+    background: #fff;
+}
+
+.logo img {
+    width: 90px;
+    cursor: pointer;
+}
+
+.menu-item li {
+    margin: 0px 20px;
+}
+
+.menu-item .close {
+    display: none;
+}
+
+.menu-item li a {
+    color: #000;
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+
+.menu-item li a:hover {
+    color: rgb(253, 100, 73);
+}
+
+.menu-item li.active a {
+    color: rgb(253, 100, 73);
+    font-weight: 600;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.icons i:hover {
+    color: rgb(253, 100, 73);
+}
+
+.icons i.bar {
+    display: none;
+    font-size: 2.5rem !important;
+}
+
+/* ------- header section end here ---- */
+
+
+/* ----- home section styling here ---- */
+.home-section {
+    margin-top: 69px;
+    padding: 1rem 3rem;
+    padding-top: 4rem;
+}
+
+.home-content{
+    flex-basis: 55%;
+}
+
+.home-img{
+    flex-basis: 40%;
+}
+.home-content h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.home-content h3 span {
+    margin-right: 20px;
+}
+
+.home-content h3 img {
+    width: 50px;
+}
+
+.home-content h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 4rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.list {
+    margin-left: 72px;
+    margin-top: 30px;
+}
+
+.list li {
+    margin-top: 15px;
+}
+
+.list li span {
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+}
+
+.list div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(253, 100, 73);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.list div img {
+    width: 18px;
+}
+
+.home-content p{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 15px;
+    color: rgb(72, 71, 71);
+}
+
+.buttons .btn{
+    margin-right: 20px;
+
+}
+
+.home-img .img img{
+    max-width: 400px;
+    width: 100%;
+}
+
+.home-img .img{
+    position: relative;
+}
+
+
+
+
+.dot{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.dot:first-child{
+    margin-left: 0px;
+}
+.yellow-dot{
+    background-color: rgb(237, 237, 33);
+}
+
+.tomato-dot{
+    background: rgb(253, 100, 73);
+}
+
+.black-dot{
+    background: #000;
+}
+
+
+#circle{
+    position: absolute;
+    left: 36px;
+    top: 50%;
+    width: 105px;
+}
+
+.discount-content{
+    position: absolute;
+    left: 64px;
+    top: 58%;
+    z-index: 11;
+    color: #fff;
+    text-align: center;
+    flex-flow: column;
+}
+
+.discount-content h4{
+    font-size: 12px;
+}
+.discount-content h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+}
+/* ----- home section styling end here ---- */
+
+
+
+
+/* ------ media query here ---- */
+@media screen and (max-width:1085px) {
+    .home-section{
+       flex-direction: column-reverse;
+       padding: 1rem;
+    }
+
+    .home-content{
+        flex-basis: 100%;
+        margin-top: 50px;
+    }
+
+    .home-img{
+        flex-basis: 100%;
+    }
+
+    .buttons .btn{
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right:10px;
+    }
+    #circle{
+        left: -26px;
+
+    }
+    .discount-content{
+      left: 0px;
+    }
+}
+
+@media screen and (max-width:724px) {
+    .navbar {
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-item {
+        position: fixed;
+        left: 0px;
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        flex-flow: column;
+        justify-content: center;
+        background-color: #f5f5f5;
+        transition: all 0.2s ease;
+        z-index: 11;
+    }
+
+    .menu-item.active {
+        top: 0px;
+    }
+
+    .menu-item li {
+        margin-top: 20px;
+    }
+
+    .menu-item li:first-child {
+        margin-top: 0px;
+    }
+
+    .icons i.bar {
+        display: block;
+    }
+
+    .menu-item .close {
+        display: block;
+        font-size: 3rem;
+        font-weight: 600;
+        cursor: pointer;
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        transition: all 0.3s ease;
+    }
+
+     .home-content h1{
+       font-size: 3rem;
+    }
+    .list{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:478px) {
+    #circle{
+        left: 167px;
+        top: 44%;
+    }
+    .discount-content{
+        left: 191px;
+        top: 52%;
+    }
+}
+
+@media screen and (max-width:307px) {
+    .home-content h3{
+        font-size: 1.5rem;
+    }
+    .home-content h1{
+        font-size: 2.5rem;
+    }
+    #circle{
+        width: 90px;
+    }
+    .discount-content{
+        left: 185px;
+        top: 54%;
+    }
+    .discount-content h1{
+        font-size: 1.1rem;
+    }
+    .discount-content h4{
+       font-size: 12px;
+    }
+}
+
