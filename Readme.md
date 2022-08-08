@@ -4,4 +4,4 @@
 
 I have built this project within 2 hours
 
-[project-link](http:/itsabhi.ml)
+[project-link](https://abhi7.netlify.app/)
